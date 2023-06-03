@@ -53,7 +53,7 @@ const Home = () => {
     if (stepCount === 3) {
       console.log(ncrDetails);
       let options = {
-        url: 'http://localhost:8000/nrcDetails',
+        url: 'https://orca-backend.vercel.app/nrcDetails',
         method: 'post',
         headers: {
           'content-type': 'application/json',

@@ -1,9 +1,8 @@
-import React from 'react';
 import axios from 'axios';
 
 export async function getDetails() {
   let options = {
-    url: `http://localhost:8000/getDetails`,
+    url: `https://orca-backend.vercel.app/getDetails`,
     method: 'get',
     headers: {
       'content-type': 'application/json',
@@ -12,7 +11,6 @@ export async function getDetails() {
   try {
     let resp = await axios(options);
     return resp;
-    // return { msg: 'success', resp };
   } catch (error) {
     console.log(error);
     return { msg: 'error', error };
