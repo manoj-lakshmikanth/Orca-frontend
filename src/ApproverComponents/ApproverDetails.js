@@ -579,9 +579,9 @@ const ApproverDetails = ({ clickID, setClickID }) => {
         }}
       >
         <Button variant="outlined" color="error">
-          Error
+          Cancel
         </Button>
-        <Button variant="contained">Contained</Button>
+        <Button variant="contained">Approve</Button>
       </Box>
     </Box>
   );
