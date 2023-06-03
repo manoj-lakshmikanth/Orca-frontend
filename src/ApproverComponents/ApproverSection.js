@@ -114,6 +114,7 @@ const ApproverSection = ({ clickID, setClickID }) => {
                 paddingLeft: '5%',
                 width: '95%',
                 marginTop: '0px',
+                cursor: 'pointer',
               }}
               onClick={() => {
                 clickHandler(id);
@@ -143,8 +144,6 @@ const ApproverSection = ({ clickID, setClickID }) => {
                 </p>
               </div>
               <div>
-                {/* {getData.map((item, id) => {
-                  return ( */}
                 <div>
                   <p
                     style={{
@@ -165,7 +164,6 @@ const ApproverSection = ({ clickID, setClickID }) => {
                       fontWeight: '400',
                       lineHeight: '20px',
                       color: 'rgba(96, 107, 133, 1)',
-                      // border: '1px solid red',
                       margin: '0px',
                       paddingTop: '5px',
                     }}
@@ -173,8 +171,6 @@ const ApproverSection = ({ clickID, setClickID }) => {
                     Contacted: {item.act1Date}
                   </p>
                 </div>
-                {/* );
-                })} */}
               </div>
             </div>
           );
