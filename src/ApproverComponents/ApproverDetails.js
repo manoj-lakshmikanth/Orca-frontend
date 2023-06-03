@@ -48,7 +48,6 @@ const ApproverDetails = ({ clickID, setClickID }) => {
         display: 'flex',
         flexDirection: 'column',
         rowGap: '30px',
-        border: '1px solid blue',
         width: '70%',
         // marginLeft: '20px',
         padding: '20px',

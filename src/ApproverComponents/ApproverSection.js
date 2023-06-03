@@ -34,10 +34,8 @@ const ApproverSection = ({ clickID, setClickID }) => {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
-          //   border: '1px solid red',
           width: '97%',
           alignItems: 'center',
-          //   marginRight: '25px',
         }}
       >
         <Box>
@@ -60,7 +58,7 @@ const ApproverSection = ({ clickID, setClickID }) => {
               paddingTop: '10px',
             }}
           >
-            ** Total
+            {getData.length} Total
           </Typography>
         </Box>
         <AiFillPlusCircle size={36} color={'rgba(2, 99, 224, 1)'} />
@@ -98,24 +96,9 @@ const ApproverSection = ({ clickID, setClickID }) => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          // borderLeft: '1px dotted blue',
           marginTop: '20px',
         }}
       >
-        {/* <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            columnGap: '10px',
-            border: '1px solid grey',
-            height: '72px',
-            alignItems: 'center',
-            justifyContent: 'start',
-            paddingLeft: '5%',
-            width: '95%',
-            marginTop: '20px',
-          }}
-        > */}
         {getData.map((item, id) => {
           return (
             <div
@@ -196,61 +179,6 @@ const ApproverSection = ({ clickID, setClickID }) => {
             </div>
           );
         })}
-        {/* <Box
-            sx={{
-              backgroundColor: 'rgba(200, 175, 240, 1)',
-              borderRadius: '15px',
-              width: '32px',
-              height: '32px',
-              position: 'relative',
-            }}
-          >
-            <Typography
-              sx={{
-                position: 'relative',
-                top: '8%',
-                left: '25%',
-                fontFamily: 'Inter',
-                fontSize: '12px',
-                fontWeight: '700',
-                lineHeight: '32px',
-              }}
-            >
-              BT
-            </Typography>
-          </Box>
-          <Box>
-            {getData.map((item, id) => {
-              return (
-                <div key={id}>
-                  <p
-                    style={{
-                      fontFamily: 'Inter',
-                      fontSize: '18px',
-                      fontWeight: '400',
-                      lineHeight: '20px',
-                      border: '1px solid red',
-                    }}
-                  >
-                    {item.summary}
-                  </p>
-                  <p
-                    style={{
-                      fontFamily: 'Inter',
-                      fontSize: '14px',
-                      fontWeight: '400',
-                      lineHeight: '20px',
-                      color: 'rgba(96, 107, 133, 1)',
-                      border: '1px solid red',
-                    }}
-                  >
-                    Contacted: {item.act1Date}
-                  </p>
-                </div>
-              );
-            })}
-          </Box> */}
-        {/* </Box> */}
       </Box>
     </Box>
   );

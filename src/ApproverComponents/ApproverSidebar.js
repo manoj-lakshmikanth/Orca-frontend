@@ -14,7 +14,6 @@ const Sidebar = () => {
     flexDirection: 'row',
     columnGap: '8%',
     alignItems: 'center',
-    // border: '1px solid red',
   });
 
   const TypoFont = styled(Typography)({
@@ -23,18 +22,6 @@ const Sidebar = () => {
     fontWeight: '500',
     lineHeight: '36px',
     color: 'rgba(51, 51, 51, 1)',
-    // letter-spacing: 0em;
-    // text-align: left;
-  });
-
-  const SubTypoFont = styled(Typography)({
-    fontFamily: 'Manrope',
-    fontSize: '16px',
-    fontWeight: '700',
-    lineHeight: '65px',
-    color: 'rgba(51, 51, 51, 1)',
-    // letter-spacing: 0em;
-    // text-align: left;
   });
 
   return (
@@ -50,8 +37,6 @@ const Sidebar = () => {
       <Box
         sx={{
           padding: '60px 0px 0px 30px',
-          //   paddingTop: '60px',
-          //   border: '1px solid green',
           width: '60%',
           display: 'flex',
           flexDirection: 'column',
@@ -75,8 +60,6 @@ const Sidebar = () => {
               flexDirection: 'row',
               columnGap: '8%',
               alignItems: 'center',
-              //   justifyContent: 'center',
-              //   color: 'rgb(73,0,228)',
               height: '57px',
               paddingLeft: '5px',
             }}
@@ -94,13 +77,6 @@ const Sidebar = () => {
               NCR Approver
             </Typography>
           </Box>
-          {/* <Box sx={{ marginLeft: '20%' }}>
-            <SubTypoFont>NCR Information</SubTypoFont>
-            <SubTypoFont>Actions</SubTypoFont>
-            <SubTypoFont>Material Information</SubTypoFont>
-            <SubTypoFont>Financial Information</SubTypoFont>
-            <SubTypoFont>Approver/Reviewer</SubTypoFont>
-          </Box> */}
         </Box>
         <ElementDesign>
           <FiSettings size={24} color={'rgba(51, 51, 51, 1)'} />
